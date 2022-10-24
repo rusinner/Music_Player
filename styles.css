@@ -32,7 +32,7 @@
   -10px -10px 12px #222529,
   inset 4px 4px 8px #33353b,
   inset -4px -4px 8px #151618;
-  --box-shadow06:10px 10px 12px #151618,
+  --box-shadow07:10px 10px 12px #151618,
   -10px -10px 12px #222529,
   inset -4px -4px 8px #33353b,
   inset 4px 4px 8px #151618;
@@ -109,4 +109,139 @@ body {
   font-size: 14px;
   text-transform: capitalize;
   padding: 10px 0 20px 0;
+}
+.wrapper .player .audioC {
+  margin: 30px 0px 30px 0px;
+}
+.wrapper .player .audioC .song-timer {
+  margin-bottom: 20px;
+}
+.wrapper .player .audioC .song-timer span {
+  font-size: 10px;
+  color: #7c7d80;
+  font-weight: 800;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.wrapper .player .progress-area {
+  height: 7px;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 50px;
+  background: var(--bg04);
+  box-shadow: var(--box-shadow04);
+  cursor: pointer;
+}
+.wrapper .player .progress-area .progress-bar {
+  height: inherit;
+  width: 0;
+  position: relative;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #bf2311 0%, #e1530a 100%);
+  box-shadow: var(--box-shadow04);
+}
+.wrapper .player .progress-area .progress-bar::before {
+  content: "";
+  position: absolute;
+  background: var(--bg02);
+  box-shadow: var(--box-shadow05);
+  border-radius: 50%;
+  top: 50%;
+  right: -14px;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  outline: none;
+  border: none;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+}
+.wrapper .player .progress-area .progress-bar::after {
+  content: "";
+  position: absolute;
+  background: #e1530a;
+  box-shadow: var(--box-shadow05);
+  border-radius: 50%;
+  top: 50%;
+  right: -5px;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  outline: none;
+  border: none;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+}
+.wrapper .player .controls {
+  margin: 55px 8px 5px 8px;
+}
+.wrapper .player .controls .btnC {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid var(--border02);
+  background: var(--bg03);
+  box-shadow: var(--box-shadow06);
+}
+.wrapper .player .controls .btnC:active {
+  box-shadow: var(--box-shadow07);
+}
+.wrapper .player .controls i {
+  font-size: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #a7a9a7;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .player .controls .play-pause {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 3px solid #c34b03;
+  background: linear-gradient(135deg, #bd2210, #e5550b);
+  box-shadow: 10px 10px 12px #151618, -10px -10px 12px #222529, inset 4px 4px 8px #e5550b, inset -4px -4px 8px #bd2210;
+}
+.wrapper .player .controls .play-pause:active {
+  box-shadow: 10px 10px 12px #151618, -10px -10px 12px #222529, inset -10px -10px 8px #e5550b, inset 10px 10px 8px #bd2210;
+}
+.wrapper .player .controls .play-pause i {
+  text-align: center;
+  color: #fff;
+}
+
+.rotate {
+  -webkit-animation: rotation 8s infinite linear;
+          animation: rotation 8s infinite linear;
+  transform-origin: center;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }/*# sourceMappingURL=styles.css.map */
