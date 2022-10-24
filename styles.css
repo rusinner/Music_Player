@@ -90,8 +90,8 @@ body {
   margin-top: 2rem;
 }
 .wrapper .player img {
-  width: 18rem;
-  height: 18rem;
+  width: 14rem;
+  height: 14rem;
   border-radius: 50%;
   margin-bottom: 2rem;
   -o-object-fit: cover;
@@ -128,7 +128,6 @@ body {
 .wrapper .player .progress-area {
   height: 7px;
   width: 100%;
-  margin-top: 15px;
   border-radius: 50px;
   background: var(--bg04);
   box-shadow: var(--box-shadow04);
@@ -177,7 +176,7 @@ body {
   transition: all 0.2s ease;
 }
 .wrapper .player .controls {
-  margin: 55px 8px 5px 8px;
+  margin: 0px 8px 5px 8px;
 }
 .wrapper .player .controls .btnC {
   width: 70px;

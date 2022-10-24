@@ -66,6 +66,7 @@ body{
     padding: 2rem;
     overflow: hidden;
     margin: 0 auto;
+    
     header,
     .song-timer,
     .controls{
@@ -73,6 +74,7 @@ body{
        justify-content: space-between;
        align-items: center;
        text-align: center;
+       
     }
     header{
         .hdbtn{
@@ -99,9 +101,11 @@ body{
     .player{
         margin-top: 2rem;
         
+        
+        
         img{
-            width: 18rem;
-            height: 18rem;
+            width: 14rem;
+            height: 14rem;
             border-radius: 50%;
             margin-bottom: 2rem;
             object-fit: cover;
@@ -134,7 +138,6 @@ body{
         .progress-area{
             height: 7px;
             width: 100%;
-            margin-top: 15px;
             border-radius: 50px;
             background:var(--bg04);
             box-shadow: var(--box-shadow04);
@@ -185,7 +188,8 @@ body{
             }
         }
         .controls{
-            margin:55px 8px 5px 8px ;
+            margin:0px 8px 5px 8px ;
+            
             .btnC{
                 width: 70px;
                 height: 70px;
